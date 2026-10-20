@@ -1,0 +1,39 @@
+Thank you for choosing Anime & Web Series Tracker ("Anime Tracker", "we", "us", or "our"). We believe your entertainment habits and personal lists belong solely to you. This Privacy Policy details how the application handles data, confirming our commitment to a 100% client-side, offline-first, privacy-respecting architecture.
+​1. Summary (Privacy at a Glance)
+​No Accounts Required: You do not need to register, create a profile, or log in.
+​No Server Storage: We do not operate remote databases or cloud servers to store your watchlist.
+​Local Data Retention: All your entries, episode counters, theme preferences, and custom covers are stored locally on your device via browser/WebView localStorage.
+​Zero Tracking & Analytics: We do not collect telemetry, track usage, or sell your personal data to third parties.
+​2. Information We Handle and How It Is Processed
+​A. Watchlist & Tracking Data
+​What is stored: Title, season number, episode progress, watch status (Watching, Completed, Watch Later), category type (Anime, Anime Movies, Web Series, Normal Movies), custom crop/zoom positioning coordinates, and image links or data.
+​Where it is stored: Exclusively in your device’s browser storage (localStorage.getItem('animeList')). This data never leaves your device unless you choose to export it.
+​B. Device File Uploads & Cover Images
+​When you choose an image file from your device storage, the application processes it entirely on your client machine using HTML5 Canvas (toDataURL('image/jpeg')).
+​The image is compressed and converted into a local Base64 string stored directly within your local database. It is never uploaded to an external server or remote file bucket.
+​C. Preferences & Themes
+​Your selected UI theme (cyber-emerald, midnight-oled, clean-paper, crimson-obsidian, sunset-amber) is stored locally in localStorage.getItem('appTheme') to remember your visual settings across sessions.
+​3. Data Backup, Export, and Import
+​The app includes explicit backup and restore capabilities:
+​Export / Backup: When you download a backup file (atbackup.json), copy backup code to the clipboard, or use the device Share sheet (navigator.share), the raw JSON text of your list is generated strictly on your device.
+​Import / Restore: When you restore data via file upload or pasting text, the JSON is parsed and written directly into your device's local storage.
+​Your Responsibility: Because your data is stored solely on your device, clearing your browser/app storage, wiping app cache, or uninstalling the app may permanently remove your tracked list unless you keep an exported atbackup.json file.
+​4. Third-Party Resources & Network Requests
+​The application is engineered to work with minimal external dependencies:
+​External Image URLs: If you supply a web URL for cover artwork (or use sample demo placeholders from Unsplash), your browser or WebView directly fetches the image from that remote server.
+​CDN Assets: The application loads public font icons (Font Awesome) and a background ambient video from public CDN hosts. These requests are subject to the standard network privacy policies of those respective hosting CDNs (e.g., standard IP delivery logs).
+​No Advertising or Analytics Trackers: There are no embedded advertising SDKs (e.g., AdMob), marketing trackers, or behavior profiling tools in this application.
+​5. Third-Party Links & Content
+​The application allows you to track titles from any source. We do not host, broadcast, or stream copyright media; the app functions strictly as an organizational catalog and bookmark manager.
+​6. Children's Privacy
+​Because the application collects no personal identifiers, names, phone numbers, email addresses, or location data, it does not knowingly collect or solicit personal information from children under the age of 13.
+​7. User Control & Data Deletion
+​You maintain complete control over your data:
+​Edit or Delete Items: You can update or remove any anime entry at any time via the in-app Edit and Delete buttons.
+​Full Data Wipe: To erase all stored information, you can clear the app or website data in your device/browser settings (Clear Storage / Clear Site Data).
+​8. Changes to This Privacy Policy
+​If the application introduces new features requiring network functionality or third-party synchronization in future releases, this Privacy Policy will be revised accordingly with an updated "Last Updated" date.
+​9. Contact & Attribution
+​Developer: HITOKIRI X
+​Application: Anime Tracker & Web Series Tracker
+​Inquiries: If you have questions about this privacy statement or the local-storage architecture of the app, please submit an issue or reach out through your official application distribution channel or repository.
